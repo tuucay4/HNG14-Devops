@@ -1,0 +1,12 @@
+[Unit]
+Description=Stage 1 API
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node /home/ubuntu/stage1-api/index.js
+Restart=always
+User=ubuntu
+WorkingDirectory=/home/ubuntu/stage1-api
+
+[Install]
+WantedBy=multi-user.target
