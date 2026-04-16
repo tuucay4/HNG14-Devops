@@ -66,6 +66,6 @@ The Port 3000 is never exposed publicly. This way Nginx takes all traffic on 443
 Nginx sits between the internet and your app. The public never touches port 3000 directly. Nginx receives the request and forwards it internally.
 
 **systemd for Node**
-`Restart=always` + `enable` = your app survives crashes and reboots without you touching anything. This is what "persistently running" means in production.
+`Restart=always` + `enable` = your app survives crashes and reboots without touching anything.
 
 ---
